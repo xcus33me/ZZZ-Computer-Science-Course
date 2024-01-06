@@ -1,7 +1,6 @@
 #pragma once
 
 #include <stdio.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 #include "fsm_realization.h"
@@ -15,7 +14,7 @@ int Task() {
     while (result) {
         result = Step(sm, (char)fgetc(file));
     }
-    
+
     DeleteStateMachine(sm);
     fclose(file);
     return 0;

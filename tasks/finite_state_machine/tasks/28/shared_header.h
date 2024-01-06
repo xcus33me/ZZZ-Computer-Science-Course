@@ -5,14 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum {
-    SEARCH = 0,
-    ADD_NUM,
-    SAVE_NUM,
-    RESULT,
-    STATECOUNT, 
-    END
-} StateName;
+typedef enum { SEARCH = 0, ADD_NUM, SAVE_NUM, RESULT, STATECOUNT, END } StateName;
 
 typedef struct State State;
 
